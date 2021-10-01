@@ -1,0 +1,42 @@
+$footer:	#2d314d;
+$gradient-1:	#31d35c;
+$gradient-2:	#2bb7da;
+$txt-color:	#9698a6;
+$bg-2:	#f3f4f6;
+$bg-1:	#fafafa;
+
+@mixin flex($justify,$align){
+display:flex;
+flex-wrap:wrap;
+justify-content:$justify;
+align-items:$align;
+}
+
+@mixin gradient(){
+    background: rgb(49,211,92);
+background: linear-gradient(90deg, rgba(49,211,92,1) 35%, rgba(43,183,218,1) 100%);
+
+
+
+}
+@mixin button{
+    background: rgb(49,211,92);
+    background: linear-gradient(90deg, rgba(49,211,92,1) 35%, rgba(43,183,218,1) 100%);
+    color:#fff;
+border:none;
+outline:none;
+border-radius:20px;
+padding:1rem  3rem  1rem 3rem;
+font-weight:700;
+text-align: center;
+transition:all 0.4s ease-in-out;
+
+}
+@mixin hover {
+   
+transition: all .4s ease-in-out;
+ text-decoration:underline;
+}
+@mixin a-hover{
+  color:#31d35c;
+}
